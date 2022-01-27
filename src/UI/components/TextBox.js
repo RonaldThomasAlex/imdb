@@ -32,7 +32,7 @@ const Input = styled.input`
     outline: none;
   }
 `;
+
 const Container = styled.div`
   display: flex;
-  margin-left: 20%;
 `;

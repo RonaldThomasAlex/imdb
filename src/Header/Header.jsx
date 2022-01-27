@@ -6,7 +6,9 @@ export function Header() {
   return (
     <Container>
       <Logo src={logo} />
-      <TextBox width="500px" placeholder="Search movie" />
+      <Spacer>
+        <ResponsiveTextBox placeholder="Search movie" />
+      </Spacer>
     </Container>
   );
 }
@@ -14,11 +16,31 @@ export function Header() {
 const Container = styled.div`
   background-color: black;
   display: flex;
-  padding: 14px 10%;
+  padding: 14px 5%;
+  flex-direction: column;
+  @media (min-width: 575px) {
+    padding: 14px 10%;
+    flex-direction: row;
+  }
 `;
 
 const Logo = styled.img`
   width: 64px;
   height: 36px;
   border-radius: 5px;
+`;
+
+const Spacer = styled.div`
+  margin-top: 15px;
+  @media (min-width: 575px) {
+    margin-top: 0;
+    margin-left: 15%;
+  }
+`;
+
+const ResponsiveTextBox = styled(TextBox)`
+  width: 100%;
+  @media (min-width: 800px) {
+    width: 500px;
+  }
 `;
