@@ -13,7 +13,7 @@ function App() {
     for (let i = 1; i < 5; i++) {
       try {
         const response = await axios.get(
-          `http://www.omdbapi.com/?i=tt3896198&apikey=bf5d1178&s=Batman&page=${i}`
+          `https://www.omdbapi.com/?i=tt3896198&apikey=bf5d1178&s=Batman&page=${i}`
         );
         result.push(...response.data.Search);
       } catch (err) {
