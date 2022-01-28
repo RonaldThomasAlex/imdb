@@ -8,6 +8,9 @@ export function Home(props) {
   return (
     <>
       <TitleImage />
+      {props.apiResponse == null && (
+        <h1 style={{ color: "white", textAlign: "center" }}>Loading!</h1>
+      )}
       <Container>
         {Array.isArray(props?.apiResponse) &&
           props?.apiResponse?.map((movie) => (
@@ -38,7 +41,7 @@ export function Home(props) {
             ))}
         </Carousel>
       </CarouselWrapper>
-      {!Array.isArray(props?.apiResponse) ? (
+      {!Array.isArray(props?.apiResponse) && props?.apiResponse !== null ? (
         props?.apiResponse?.Error ? (
           <h2 style={{ color: "white", textAlign: "center" }}>
             {props?.apiResponse?.Error}
