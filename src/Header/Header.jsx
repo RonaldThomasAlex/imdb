@@ -10,6 +10,7 @@ export function Header(props) {
         <ResponsiveTextBox
           placeholder="Search movie"
           onChange={(event) => props.setTitle(event.target.value)}
+          searchHandler={props.searchHandler}
         />
       </Spacer>
     </Container>

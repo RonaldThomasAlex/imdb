@@ -27,9 +27,20 @@ function App() {
     setTitle(value);
   }
 
+  async function onSearchHandler() {
+    try {
+      const response = await axios.get(
+        `https://www.omdbapi.com/?i=tt3896198&apikey=bf5d1178&t=${title}`
+      );
+      setApiResponse(response.data);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
   return (
     <>
-      <Header setTitle={setTitleHandler} />
+      <Header setTitle={setTitleHandler} searchHandler={onSearchHandler} />
       <Home apiResponse={apiResponse} />
     </>
   );

@@ -2,11 +2,18 @@ import styled from "styled-components";
 import searchIcon from "../../assets/svg/search.svg";
 
 export function TextBox(props) {
-  const { onClick, ...other } = props;
+  const { searchHandler, ...other } = props;
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      searchHandler();
+    }
+  };
+
   return (
     <Container>
-      <Input type="text" {...other} />
-      <SearchIcon onClick={onClick}>
+      <Input type="text" {...other} onKeyDown={handleKeyDown} />
+      <SearchIcon onClick={() => searchHandler()}>
         <img src={searchIcon} />
       </SearchIcon>
     </Container>
