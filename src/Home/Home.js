@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import { Card, Carousel } from "../UI/components";
 
+import { TitleImage } from "./components";
+
 export function Home(props) {
   return (
     <>
+      <TitleImage />
       <Container>
         {props?.apiResponse?.map((movie) => (
           <Card width="175px">
@@ -46,14 +49,14 @@ const Container = styled.div`
   display: none;
   @media (min-width: 800px) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 10px 10%;
   }
 `;
 
 const CarouselWrapper = styled.div`
-  margin: 30px 0;
+  margin: 10px 0;
 
   @media (min-width: 800px) {
     display: none;
