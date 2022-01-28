@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/imdb/static/css/main.2acdac5c.css",
+    "main.js": "/imdb/static/js/main.c5fa97df.js",
+    "static/js/787.40950247.chunk.js": "/imdb/static/js/787.40950247.chunk.js",
+    "static/media/drishyam.jpg": "/imdb/static/media/drishyam.8763474a61806933dad6.jpg",
+    "static/media/slick.svg": "/imdb/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/imdb/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/imdb/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/imdb/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/imdb/index.html",
+    "static/media/search.svg": "/imdb/static/media/search.9144b38e7b0db2ee785582a6f0c76671.svg",
+    "main.2acdac5c.css.map": "/imdb/static/css/main.2acdac5c.css.map",
+    "main.c5fa97df.js.map": "/imdb/static/js/main.c5fa97df.js.map",
+    "787.40950247.chunk.js.map": "/imdb/static/js/787.40950247.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2acdac5c.css",
+    "static/js/main.c5fa97df.js"
+  ]
+}
