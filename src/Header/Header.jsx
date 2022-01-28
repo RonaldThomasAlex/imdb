@@ -2,12 +2,15 @@ import styled from "styled-components";
 import logo from "../assets/images/logo.png";
 import { TextBox } from "../UI/components";
 
-export function Header() {
+export function Header(props) {
   return (
     <Container>
       <Logo src={logo} />
       <Spacer>
-        <ResponsiveTextBox placeholder="Search movie" />
+        <ResponsiveTextBox
+          placeholder="Search movie"
+          onChange={(event) => props.setTitle(event.target.value)}
+        />
       </Spacer>
     </Container>
   );
