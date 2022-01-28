@@ -17,7 +17,7 @@ export function Header(props) {
 }
 
 const Container = styled.div`
-  background-color: black;
+  background-color: #121212;
   display: flex;
   padding: 14px 5%;
   flex-direction: column;
